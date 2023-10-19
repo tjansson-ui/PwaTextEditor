@@ -2,6 +2,7 @@
 
 ## Description
 This text editor runs in the browser, as well as offline. The app is a single-page application that meets PWA criteria. Additionally, it features a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser.
+![Application Example](Assets/JATE.png)
 
   ## Table of Contents
   * [Installation](#installation)

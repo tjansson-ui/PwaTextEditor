@@ -28,7 +28,7 @@ module.exports = () => {
       }),
       // Creates a manifest.json file
       new WebpackPwaManifest({
-        name: "Journey Available Text Editor",
+        name: "Just Another Text Editor",
         short_name: "JATE",
         description: "A text editor that can be installed can used in browser or offline.",
         background_color: 'navy',
