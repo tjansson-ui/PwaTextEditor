@@ -2,7 +2,7 @@ import { openDB } from 'idb';
 const dbName = 'jate';
 const dbVersion = 1;
 
-const initdb = async () =>
+const initDb = async () =>
   openDB('jate', 1, {
     upgrade(db) {
       if (db.objectStoreNames.contains('jate')) {
@@ -19,9 +19,7 @@ export const putDb = async (content) => {
   const db = await openDB(dbName, dbVersion)
   const tx = db.transaction(dbName, 'readwrite')
   const store = tx.objectStore(dbName)
-  const request = store.put({ id: 1, value: content })
-  const result = await request
-  return result
+  return await store.put({ id: 1, value: content })
 };
 
 // Add logic for a method that gets all the content from the database
@@ -34,4 +32,4 @@ export const getDb = async () => {
   return result?.value
 };
 
-initdb();
+initDb();
