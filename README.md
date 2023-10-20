@@ -5,7 +5,7 @@ This text editor runs in the browser, as well as offline. The app is a single-pa
 ![Application Example](Assets/JATE.png)
 
 Application is available on [Heroku](https://texteditor-pwa-tool-ccb1582abecb.herokuapp.com)
-
+ 
   ## Table of Contents
   * [Installation](#installation)
   * [License](#license)
